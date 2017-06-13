@@ -1,0 +1,112 @@
+/*
+Theme Name: newspro
+
+Adding support for language written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+https://codex.wordpress.org/Right_to_Left_Language_Support
+
+*/
+
+/*
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+*/
+
+/**
+ * 5.0 - Navigation
+ */
+
+.main-navigation ul ul {
+	margin-right: 0.875em;
+	margin-left: auto;
+}
+
+.main-navigation .menu-item-has-children > a {
+	margin-right: auto;
+	margin-left: 56px;
+}
+
+.dropdown-toggle {
+	left: 0;
+	right: auto;
+}
+
+.dropdown-toggle:after {
+	border-right-width: 1px;
+	border-left-width: 0;
+	left: auto;
+	right: 1px;
+}
+
+.social-navigation li {
+	float: right;
+	margin: 0 0 0.4375em 0.4375em;
+}
+
+.pagination:before {
+	left: 0;
+	right: auto;
+}
+
+.pagination:after {
+	left: 54px;
+	right: auto;
+}
+
+.pagination .nav-links {
+	padding-right: 0;
+	padding-left: 106px;
+}
+
+.pagination .nav-links:before {
+	content: "\f430";
+	left: -1px;
+	right: auto;
+}
+
+.pagination .nav-links:after {
+	content: "\f429";
+	left: 55px;
+	right: auto;
+}
+
+.pagination .page-numbers {
+	margin: 0 -0.7368421053em 0 0.7368421053em;
+}
+
+.pagination .prev,
+.pagination .next {
+	margin: 0;
+}
+
+.pagination .prev {
+	left: 54px;
+	right: auto;
+}
+
+.pagination .prev:before {
+	content: "\f429";
+	left: auto;
+	right: -1px;
+}
+
+.pagination .next {
+	left: 0;
+	right: auto;
+}
+
+.pagination .next:before {
+	content: "\f430";
+	left: -1px;
+	right: auto;
+}
+
+.comment-navigation {
+	margin-right: 0;
+	margin-left: 0;
+}
+
